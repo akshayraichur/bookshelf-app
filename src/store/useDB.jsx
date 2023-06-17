@@ -29,7 +29,7 @@ const reducer = (state, action) => {
     }
     case ACTION_TYPES.wantToRead: {
       let filteredBook = state.find((book) => book.id === action.payload.id);
-      console.log(filteredBook);
+
       if (filteredBook.id) {
         filteredBook.state = STATE_TYPES.wantToRead;
       }
@@ -38,7 +38,7 @@ const reducer = (state, action) => {
 
     case ACTION_TYPES.read: {
       let filteredBook = state.find((book) => book.id === action.payload.id);
-      console.log(filteredBook);
+
       if (filteredBook.id) {
         filteredBook.state = STATE_TYPES.read;
       }

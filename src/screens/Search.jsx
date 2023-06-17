@@ -17,8 +17,6 @@ const Search = () => {
     setSearchTerm(e.target.value.trim());
   };
 
-  console.log(state);
-
   useEffect(() => {
     if (searchTerm === "") {
       setSearchedBook([]);
